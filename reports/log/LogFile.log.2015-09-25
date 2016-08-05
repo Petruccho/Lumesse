@@ -1,0 +1,163 @@
+2015-09-25 10:21:00,273  WARN [main] - com.Test01.setup 53 - Starting browser...
+2015-09-25 10:21:04,528  INFO [main] - com.Test01.generateTestValues 95 - Generating test values...
+2015-09-25 10:21:04,529  INFO [main] - com.Test01.generateTestValues 106 - Generate test values - Done
+2015-09-25 10:21:04,529  INFO [main] - com.Test01.getMachineInfo 122 - User name : Peter
+2015-09-25 10:21:04,529  INFO [main] - com.Test01.getMachineInfo 123 - Host name : MSI
+2015-09-25 10:21:04,559  WARN [main] - com.Test01.setup 75 - Start browser - Done
+2015-09-25 10:21:04,566  WARN [main] - com.pages.LoginPage.login 28 - Login as peter.borovik@vrpinc.com.demo
+2015-09-25 10:21:34,762 ERROR [main] - com.pages.LoginPage.login 39 - Unable to find element with id == username (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'MSI', ip: '10.20.4.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:63909/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0578195a-2700-4a93-90af-c796220bba2c
+*** Element info: {Using=id, value=username}
+2015-09-25 10:21:34,784 ERROR [main] - com.Test01.addTaskToQueue 53 - Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'MSI', ip: '10.20.4.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:63909/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0578195a-2700-4a93-90af-c796220bba2c
+*** Element info: {Using=link text, value=Continue}
+2015-09-25 10:21:35,833  WARN [main] - com.Test01.tearDown 135 - Quit driver and closed all windows.
+2015-09-25 10:21:49,615  WARN [main] - com.Test01.setup 53 - Starting browser...
+2015-09-25 10:21:54,259  WARN [main] - com.Test01.setup 53 - Starting browser...
+2015-09-25 10:22:28,574  WARN [main] - com.Test01.setup 53 - Starting browser...
+2015-09-25 10:22:34,461  INFO [main] - com.Test01.generateTestValues 95 - Generating test values...
+2015-09-25 10:22:34,461  INFO [main] - com.Test01.generateTestValues 106 - Generate test values - Done
+2015-09-25 10:22:34,462  INFO [main] - com.Test01.getMachineInfo 122 - User name : Peter
+2015-09-25 10:22:34,462  INFO [main] - com.Test01.getMachineInfo 123 - Host name : MSI
+2015-09-25 10:22:34,492  WARN [main] - com.Test01.setup 75 - Start browser - Done
+2015-09-25 10:22:34,500  WARN [main] - com.pages.LoginPage.login 28 - Login as peter.borovik@vrpinc.com.demo
+2015-09-25 10:23:04,762 ERROR [main] - com.pages.LoginPage.login 39 - Unable to find element with id == username (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'MSI', ip: '10.20.4.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:41263/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: c5ccb91c-d303-4a4e-806a-0bd1a1bad50b
+*** Element info: {Using=id, value=username}
+2015-09-25 10:23:04,777 ERROR [main] - com.Test01.addTaskToQueue 53 - Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'MSI', ip: '10.20.4.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=true, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:41263/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: c5ccb91c-d303-4a4e-806a-0bd1a1bad50b
+*** Element info: {Using=link text, value=Continue}
+2015-09-25 10:23:05,811  WARN [main] - com.Test01.tearDown 135 - Quit driver and closed all windows.
+2015-09-25 10:23:25,712  WARN [main] - com.Test01.setup 53 - Starting browser...
+2015-09-25 10:23:28,620  INFO [main] - com.Test01.generateTestValues 95 - Generating test values...
+2015-09-25 10:23:28,620  INFO [main] - com.Test01.generateTestValues 106 - Generate test values - Done
+2015-09-25 10:23:28,621  INFO [main] - com.Test01.getMachineInfo 122 - User name : Peter
+2015-09-25 10:23:28,621  INFO [main] - com.Test01.getMachineInfo 123 - Host name : MSI
+2015-09-25 10:23:28,635  WARN [main] - com.Test01.setup 75 - Start browser - Done
+2015-09-25 10:23:28,643  WARN [main] - com.pages.LoginPage.login 28 - Login as peter.borovik@vrpinc.com.demo
+2015-09-25 10:23:58,869 ERROR [main] - com.pages.LoginPage.login 39 - Unable to find element with id == username (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'MSI', ip: '10.20.4.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:55727/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: a90f45ff-439a-48c9-a56f-391c52b443d8
+*** Element info: {Using=id, value=username}
+2015-09-25 10:23:58,887 ERROR [main] - com.Test01.addTaskToQueue 53 - Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'MSI', ip: '10.20.4.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:55727/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: a90f45ff-439a-48c9-a56f-391c52b443d8
+*** Element info: {Using=link text, value=Continue}
+2015-09-25 10:23:59,942  WARN [main] - com.Test01.tearDown 135 - Quit driver and closed all windows.
+2015-09-25 10:24:45,598  WARN [main] - com.Test01.setup 53 - Starting browser...
+2015-09-25 10:24:48,479  INFO [main] - com.Test01.generateTestValues 95 - Generating test values...
+2015-09-25 10:24:48,479  INFO [main] - com.Test01.generateTestValues 106 - Generate test values - Done
+2015-09-25 10:24:48,480  INFO [main] - com.Test01.getMachineInfo 122 - User name : Peter
+2015-09-25 10:24:48,480  INFO [main] - com.Test01.getMachineInfo 123 - Host name : MSI
+2015-09-25 10:24:48,494  WARN [main] - com.Test01.setup 75 - Start browser - Done
+2015-09-25 10:24:48,503  WARN [main] - com.pages.LoginPage.login 28 - Login as peter.borovik@vrpinc.com.demo
+2015-09-25 10:25:18,570 ERROR [main] - com.pages.LoginPage.login 39 - Unable to find element with id == username (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'MSI', ip: '10.20.4.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48962/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 4337b2ba-eee7-442f-a877-2c6b6d9a459f
+*** Element info: {Using=id, value=username}
+2015-09-25 10:25:18,589 ERROR [main] - com.Test01.addTaskToQueue 53 - Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'MSI', ip: '10.20.4.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48962/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 4337b2ba-eee7-442f-a877-2c6b6d9a459f
+*** Element info: {Using=link text, value=Continue}
+2015-09-25 10:25:19,628  WARN [main] - com.Test01.tearDown 135 - Quit driver and closed all windows.
+2015-09-25 10:25:54,666  WARN [main] - com.Test01.setup 53 - Starting browser...
+2015-09-25 10:25:57,557  INFO [main] - com.Test01.generateTestValues 95 - Generating test values...
+2015-09-25 10:25:57,558  INFO [main] - com.Test01.generateTestValues 106 - Generate test values - Done
+2015-09-25 10:25:57,558  INFO [main] - com.Test01.getMachineInfo 122 - User name : Peter
+2015-09-25 10:25:57,558  INFO [main] - com.Test01.getMachineInfo 123 - Host name : MSI
+2015-09-25 10:25:57,573  WARN [main] - com.Test01.setup 75 - Start browser - Done
+2015-09-25 10:25:57,581  WARN [main] - com.pages.LoginPage.login 28 - Login as peter.borovik@vrpinc.com.demo
+2015-09-25 10:26:27,644 ERROR [main] - com.pages.LoginPage.login 39 - Unable to find element with id == username (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'MSI', ip: '10.20.4.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48876/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 78e1823a-5e76-47f6-a16e-a1d1681fb3d5
+*** Element info: {Using=id, value=username}
+2015-09-25 10:26:27,660 ERROR [main] - com.Test01.addTaskToQueue 53 - Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'MSI', ip: '10.20.4.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:48876/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 78e1823a-5e76-47f6-a16e-a1d1681fb3d5
+*** Element info: {Using=link text, value=Continue}
+2015-09-25 10:26:28,695  WARN [main] - com.Test01.tearDown 135 - Quit driver and closed all windows.
+2015-09-25 10:26:37,783  WARN [main] - com.Test01.setup 53 - Starting browser...
+2015-09-25 10:26:43,892  INFO [main] - com.Test01.generateTestValues 95 - Generating test values...
+2015-09-25 10:26:43,892  INFO [main] - com.Test01.generateTestValues 106 - Generate test values - Done
+2015-09-25 10:26:43,893  INFO [main] - com.Test01.getMachineInfo 122 - User name : Peter
+2015-09-25 10:26:43,893  INFO [main] - com.Test01.getMachineInfo 123 - Host name : MSI
+2015-09-25 10:26:43,909  WARN [main] - com.Test01.setup 75 - Start browser - Done
+2015-09-25 10:26:43,917  WARN [main] - com.pages.LoginPage.login 28 - Login as peter.borovik@vrpinc.com.demo
+2015-09-25 10:26:58,179  WARN [main] - com.pages.LoginPage.login 43 - User peter.borovik@vrpinc.com.demo logged in successfully!
+2015-09-25 10:26:58,179  WARN [main] - com.pages.LoginPage.selectApp 552 - Selecting Sales...
+2015-09-25 10:26:58,304  INFO [main] - com.pages.LoginPage.selectApp 560 - Old UI app selector
+2015-09-25 10:26:58,401  INFO [main] - com.pages.LoginPage.selectApp 565 - Sales selected already
+2015-09-25 10:26:58,401  WARN [main] - com.pages.LoginPage.selectApp 592 - Selecting Sales - Done
+2015-09-25 10:26:58,402  INFO [main] - com.pages.LeadsPage.createLead 38 - Creating Lead First_25091026706...
+2015-09-25 10:26:58,402  WARN [main] - com.pages.LeadsPage.openPage 596 - Opening Leads page...
+2015-09-25 10:27:11,131  WARN [main] - com.pages.LeadsPage.openPage 615 - Open Leads page - Done
+2015-09-25 10:27:12,539  INFO [main] - com.pages.LeadsPage.createLead 42 - Clicked on "New" button
+2015-09-25 10:27:21,610  INFO [main] - com.pages.LeadsPage.createLead 58 - Clicked on Save
+2015-09-25 10:27:23,762  INFO [main] - com.pages.LeadsPage.createLead 64 - Create Lead First_25091026706 - Done
+2015-09-25 10:27:23,763  INFO [main] - com.pages.CommonPage.createTask 114 - Creating Task Last_25091026706...
+2015-09-25 10:27:23,763  INFO [main] - com.pages.CommonPage.findItem 370 - Find: Last_25091026706
+2015-09-25 10:27:33,160  INFO [main] - com.pages.CommonPage.findItem 406 - Find: Last_25091026706 - Done
+2015-09-25 10:27:34,544  INFO [main] - com.pages.CommonPage.createTask 122 - Clicked on New Task
+2015-09-25 10:27:36,906  INFO [main] - com.pages.CommonPage.createTask 137 - Clicked on Continue
+2015-09-25 10:27:45,341  INFO [main] - com.pages.CommonPage.createTask 153 - Clicked on Save
+2015-09-25 10:27:48,512  INFO [main] - com.pages.CommonPage.createTask 167 - Create Task Last_25091026706 - Done
+2015-09-25 10:27:48,512  INFO [main] - com.pages.CommonPage.createTask 177 - Create Task Last_25091026706 - Done
+2015-09-25 10:27:48,512  INFO [main] - com.pages.CommonPage.verifyTask 205 - Verifying Task Last_25091026706...
+2015-09-25 10:27:48,512  INFO [main] - com.pages.CommonPage.findItem 370 - Find: Last_25091026706
+2015-09-25 10:27:56,270  INFO [main] - com.pages.CommonPage.findItem 406 - Find: Last_25091026706 - Done
+2015-09-25 10:27:56,463  INFO [main] - com.pages.CommonPage.verifyTask 213 - Verify Task Last_25091026706 - Done
+2015-09-25 10:27:56,465  INFO [main] - com.pages.LeadsPage.deleteLead 74 - Deleting Lead Last_25091026706...
+2015-09-25 10:27:56,465  INFO [main] - com.pages.LeadsPage.findItem 370 - Find: Last_25091026706
+2015-09-25 10:28:03,769  INFO [main] - com.pages.LeadsPage.findItem 406 - Find: Last_25091026706 - Done
+2015-09-25 10:28:04,244  INFO [main] - com.pages.LeadsPage.deleteLead 80 - Clicked on Delete
+2015-09-25 10:28:06,731  INFO [main] - com.pages.LeadsPage.deleteLead 85 - Delete Lead Last_25091026706 - Done
+2015-09-25 10:28:07,817  WARN [main] - com.Test01.tearDown 135 - Quit driver and closed all windows.

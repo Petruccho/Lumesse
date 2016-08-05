@@ -101,6 +101,9 @@ public class CreateFlowsPage extends AbstractPage {
 	private WebElement activateButton;
 	
 	
+	@FindBy(xpath = "//button[@class='uiButton--default uiButton--brand uiButton']")
+	private WebElement confirmActivateButton;
+	
 	public void createFlow(String name, String description, String objectName,
 			String criteriaName, String apexClassName, String oneValueName,
 			String twoFieldName, String twoValueName, String threeFieldName,
@@ -111,7 +114,7 @@ public class CreateFlowsPage extends AbstractPage {
 		processName.clear();
 		processName.sendKeys(name);
 		processDescription.clear();
-		processDescription.sendKeys(name);
+		processDescription.sendKeys(description);
 		Thread.sleep(2000);
 		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
 		saveButton.click();
@@ -228,6 +231,12 @@ public class CreateFlowsPage extends AbstractPage {
 		chooseButton.click();
 		Thread.sleep(2000);
 		saveActionButton.click();
+		
+		Thread.sleep(3000);
+		activateButton.click();
+		
+		waitForElementVisible(confirmActivateButton, PAUSE_LENGTH.AVG);
+		confirmActivateButton.click();
 	}
 
 }

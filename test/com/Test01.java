@@ -36,7 +36,7 @@ public class Test01 extends BaseTestCase {
             //setupPage.findSetupElement("Chatter Settings");
             //setupPage.enableActionsInThePublisher();
             setupPage.findSetupElement("Process Builder");
-            createFlowPage.createFlow("Test4", "Test4", "Contact", "Contact Created", "tobase__to_process_generateTalentData", "Contact ID", "Skills to Import", "Skills to Import", "Targeted Roles To Import", "Targeted Roles");
+            createFlowPage.createFlow("Test13", "Test", "Contact", "Contact Created", "tobase__to_process_generateTalentData", "Contact ID", "Skills to Import", "Skills to Import", "Targeted Roles To Import", "Targeted Roles");
             Thread.sleep(5000);
 
 			
