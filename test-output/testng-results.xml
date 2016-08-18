@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="112560" started-at="2016-08-18T15:01:22Z" finished-at="2016-08-18T15:03:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="112560" started-at="2016-08-18T15:01:22Z" finished-at="2016-08-18T15:03:14Z">
+      <class name="com.AutoTargeting">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.AutoTargeting@6537cf78]" name="setup" is-config="true" duration-ms="3571" started-at="2016-08-18T18:01:22Z" finished-at="2016-08-18T18:01:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="autoTargeting()[pri:0, instance:com.AutoTargeting@6537cf78]" name="autoTargeting" duration-ms="108047" started-at="2016-08-18T18:01:25Z" finished-at="2016-08-18T18:03:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autoTargeting -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.AutoTargeting@6537cf78]" name="tearDown" is-config="true" duration-ms="932" started-at="2016-08-18T18:03:13Z" finished-at="2016-08-18T18:03:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.AutoTargeting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

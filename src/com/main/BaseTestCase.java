@@ -16,7 +16,6 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 
 /**
@@ -25,14 +24,10 @@ import org.testng.annotations.AfterClass;
  * 
  */
 public abstract class BaseTestCase {
-	public QueuePage queuePage;
+
 	public LoginPage loginPage;
-	public LeadsPage leadsPage;
-	public AccountsPage accountsPage;
-	public CommonPage commonPage;
     public SetupPage setupPage;
     public CreateFlowsPage createFlowPage;
-
 
 	protected WebDriver driver;
 
