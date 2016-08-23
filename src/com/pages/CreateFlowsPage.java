@@ -45,8 +45,6 @@ public class CreateFlowsPage extends AbstractPage {
 	@FindBy(xpath = "//span[text() = 'No criteria—just execute the actions!']")
 	private WebElement noCriteriaType;
 
-	// @FindBy(xpath =
-	// "//html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div/label/div[2]/input")
 	@FindBy(xpath = "//span[text()='Criteria Name']/..//input")
 	private WebElement nameCriteriaField;
 
@@ -62,8 +60,6 @@ public class CreateFlowsPage extends AbstractPage {
 	@FindBy(xpath = "//span[text()='Action Type']/..//select")
 	private WebElement actionTypeSelect;
 
-	// @FindBy(xpath =
-	// "//html/body/div[4]/div[2]/div[2]/div[3]/div[2]/div/div/label[1]/span[1]")
 	@FindBy(xpath = "//span[text()='Action Name']/..//input")
 	private WebElement actionNameField;
 
@@ -109,7 +105,7 @@ public class CreateFlowsPage extends AbstractPage {
 	@FindBy(xpath = "//button[@class='uiButton--default uiButton--brand uiButton']")
 	private WebElement confirmActivateButton;
 
-	public void creategenerateTalentProspectDataFlow(String name,
+	public void createGenerateTalentProspectDataFlow(String name,
 			String description, String objectName, String criteriaName)
 			throws Exception {
 
@@ -142,7 +138,7 @@ public class CreateFlowsPage extends AbstractPage {
 		nameCriteriaField.sendKeys(criteriaName);
 		noCriteriaType.click();
 		Thread.sleep(2000);
-		// driver.findElement(By.xpath("//html/body/div[4]/div[2]/div[2]/div[2]/div[3]/button[1]")).click();
+
 		waitForElementVisible(saveCriteriaButton, PAUSE_LENGTH.AVG);
 		saveCriteriaButton.click();
 
@@ -154,14 +150,10 @@ public class CreateFlowsPage extends AbstractPage {
 		waitForElementVisible(actionTypeSelect, PAUSE_LENGTH.AVG);
 		Select actionType = new Select(actionTypeSelect);
 		actionType.selectByVisibleText("Apex");
-		// driver.findElement(By.xpath("//html/body/div[4]/div[2]/div[1]/div/div/div[6]/span/div/div/div[3]/div[1]/div[3]/div/a/div/span[2]")).click();
-		// Thread.sleep(2000);
-		// driver.findElement(By.xpath(".//*[@id='942:2;a']"));
+
 		waitForElementVisible(actionNameField, PAUSE_LENGTH.AVG);
 		actionNameField.sendKeys("Generate Talent Prospect Data");
-		// Select actionType = new
-		// Select(driver.findElement(By.xpath(".//*[@id='942:2;a']")));
-		// actionType.selectByVisibleText("Apex");
+
 		apexClassField.sendKeys("tobase__to_process_generateTalentData");
 		waitForElementVisible(
 				By.xpath("//mark[text()='tobase__to_process_generateTalentData']"),
@@ -170,7 +162,8 @@ public class CreateFlowsPage extends AbstractPage {
 				By.xpath("//mark[text()='tobase__to_process_generateTalentData']"))
 				.click();
 		Thread.sleep(2000);
-		Select oneTypeSetApexvariables = new Select(oneTypeSetApexVariablesSelect);
+		Select oneTypeSetApexvariables = new Select(
+				oneTypeSetApexVariablesSelect);
 		oneTypeSetApexvariables.selectByVisibleText("Reference");
 		waitForElementVisible(oneValueField, PAUSE_LENGTH.AVG);
 		oneValueField.click();
@@ -196,7 +189,8 @@ public class CreateFlowsPage extends AbstractPage {
 				By.xpath("//span[text()='2 Field']/..//a[contains(text(),'Skills to Import')]"))
 				.click();
 		Thread.sleep(2000);
-		Select twoTypeSetApexvariables = new Select(twoTypeSetApexVariablesSelect);
+		Select twoTypeSetApexvariables = new Select(
+				twoTypeSetApexVariablesSelect);
 		twoTypeSetApexvariables.selectByVisibleText("Reference");
 		waitForElementVisible(twoValueField, PAUSE_LENGTH.AVG);
 		twoValueField.click();
@@ -221,7 +215,8 @@ public class CreateFlowsPage extends AbstractPage {
 				By.xpath("//span[text()='3 Field']/..//a[contains(text(),'Targeted Roles To Import')]"))
 				.click();
 		Thread.sleep(2000);
-		Select threeTypeSetApexvariables = new Select(threeTypeSetApexVariablesSelect);
+		Select threeTypeSetApexvariables = new Select(
+				threeTypeSetApexVariablesSelect);
 		threeTypeSetApexvariables.selectByVisibleText("Reference");
 		waitForElementVisible(threeValueField, PAUSE_LENGTH.AVG);
 		threeValueField.click();
@@ -246,7 +241,7 @@ public class CreateFlowsPage extends AbstractPage {
 	private WebElement conditionsCriteriaType;
 
 	@FindBy(xpath = "//div[@class='modal-container']//input")
-	private WebElement contactContainerField;
+	private WebElement inputContainerField;
 
 	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonConditionListRow'][1]//span[text()='Find a field...']")
 	private WebElement criteriaOneField;
@@ -319,8 +314,8 @@ public class CreateFlowsPage extends AbstractPage {
 
 		// First Condition
 		criteriaOneField.click();
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Comments");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Comments");
 		waitForElementVisible(By.xpath("//span[text()='Comments']"),
 				PAUSE_LENGTH.AVG);
 		driver.findElement(By.xpath("//span[text()='Comments']")).click();
@@ -341,8 +336,8 @@ public class CreateFlowsPage extends AbstractPage {
 
 		// Second condition
 		criteriaTwoField.click();
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Comments");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Comments");
 		waitForElementVisible(By.xpath("//span[text()='Comments']"),
 				PAUSE_LENGTH.AVG);
 		driver.findElement(By.xpath("//span[text()='Comments']")).click();
@@ -381,8 +376,8 @@ public class CreateFlowsPage extends AbstractPage {
 		waitForElementVisible(mergeFieldField, PAUSE_LENGTH.AVG);
 		mergeFieldField.click();
 
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Comments");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Comments");
 		waitForElementVisible(By.xpath("//span[text()='Comments']"),
 				PAUSE_LENGTH.AVG);
 		driver.findElement(By.xpath("//span[text()='Comments']")).click();
@@ -473,8 +468,8 @@ public class CreateFlowsPage extends AbstractPage {
 
 		// First Condition
 		criteriaOneField.click();
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Status");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Status");
 		waitForElementVisible(By.xpath("//span[text()='Status']"),
 				PAUSE_LENGTH.AVG);
 		driver.findElement(By.xpath("//span[text()='Status']")).click();
@@ -495,8 +490,8 @@ public class CreateFlowsPage extends AbstractPage {
 
 		// Second condition
 		criteriaTwoField.click();
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Response");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Response");
 		waitForElementVisible(By.xpath("//span[text()='Response']"),
 				PAUSE_LENGTH.AVG);
 		driver.findElement(By.xpath("//span[text()='Response']")).click();
@@ -665,8 +660,8 @@ public class CreateFlowsPage extends AbstractPage {
 
 		// First Condition
 		criteriaOneField.click();
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Status");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Status");
 		waitForElementVisible(By.xpath("//span[text()='Status']"),
 				PAUSE_LENGTH.AVG);
 		driver.findElement(By.xpath("//span[text()='Status']")).click();
@@ -687,8 +682,8 @@ public class CreateFlowsPage extends AbstractPage {
 
 		// Second condition
 		criteriaTwoField.click();
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Response");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Response");
 		waitForElementVisible(By.xpath("//span[text()='Response']"),
 				PAUSE_LENGTH.AVG);
 		driver.findElement(By.xpath("//span[text()='Response']")).click();
@@ -891,8 +886,8 @@ public class CreateFlowsPage extends AbstractPage {
 		conditionsCriteriaType.click();
 
 		criteriaOneField.click();
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Current_Role__c");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Current_Role__c");
 		waitForElementVisible(By.xpath("//span[text()='Current_Role__c']"),
 				PAUSE_LENGTH.AVG);
 		driver.findElement(By.xpath("//span[text()='Current_Role__c']"))
@@ -997,13 +992,13 @@ public class CreateFlowsPage extends AbstractPage {
 
 	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonParameterListRow'][1]//option[@label='Reference']/parent::select")
 	private WebElement oneTypeSetApexVariablesSelect;
-	
+
 	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonParameterListRow'][2]//option[@label='Reference']/parent::select")
 	private WebElement twoTypeSetApexVariablesSelect;
-	
+
 	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonParameterListRow'][3]//option[@label='Reference']/parent::select")
 	private WebElement threeTypeSetApexVariablesSelect;
-	
+
 	public void createAutoPipeliningFlow(String name, String description,
 			String objectName, String criteriaName) throws Exception {
 
@@ -1040,8 +1035,8 @@ public class CreateFlowsPage extends AbstractPage {
 		conditionsCriteriaType.click();
 
 		criteriaOneField.click();
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Current_Role__c");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Current_Role__c");
 		waitForElementVisible(By.xpath("//span[text()='Current_Role__c']"),
 				PAUSE_LENGTH.AVG);
 		driver.findElement(By.xpath("//span[text()='Current_Role__c']"))
@@ -1081,9 +1076,10 @@ public class CreateFlowsPage extends AbstractPage {
 				By.xpath("//a[text()='tobase__to_process_autoPipeliningProspect']"))
 				.click();
 		Thread.sleep(2000);
-		Select oneTypeSetApexvariables = new Select(oneTypeSetApexVariablesSelect);
+		Select oneTypeSetApexvariables = new Select(
+				oneTypeSetApexVariablesSelect);
 		oneTypeSetApexvariables.selectByVisibleText("Reference");
-		
+
 		waitForElementVisible(oneValueField, PAUSE_LENGTH.AVG);
 		oneValueField.click();
 		waitForElementVisible(selectAFieldField, PAUSE_LENGTH.AVG);
@@ -1104,7 +1100,8 @@ public class CreateFlowsPage extends AbstractPage {
 				By.xpath("//span[text()='2 Field']/..//a[contains(text(),'Functional Role Lookup')]"))
 				.click();
 		Thread.sleep(2000);
-		Select twoTypeSetApexvariables = new Select(twoTypeSetApexVariablesSelect);
+		Select twoTypeSetApexvariables = new Select(
+				twoTypeSetApexVariablesSelect);
 		twoTypeSetApexvariables.selectByVisibleText("Reference");
 		waitForElementVisible(twoValueField, PAUSE_LENGTH.AVG);
 		twoValueField.click();
@@ -1115,7 +1112,7 @@ public class CreateFlowsPage extends AbstractPage {
 				.click();
 		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
 		chooseButton.click();
-		
+
 		Thread.sleep(2000);
 		saveActionButton.click();
 
@@ -1128,13 +1125,13 @@ public class CreateFlowsPage extends AbstractPage {
 
 	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonConditionListRow'][1]//option[@value='GlobalConstant']/parent::select")
 	private WebElement oneTypeDefineCriteriaConditionSelect;
-	
+
 	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonConditionListRow'][2]//option[@value='GlobalConstant']/parent::select")
 	private WebElement twoTypeDefineCriteriaConditionSelect;
-	
+
 	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonConditionListRow'][2]//option[text()='Select One']/parent::select")
 	private WebElement valueTwoDefineCriteriaConditionSelect;
-	
+
 	public void createImportingNotesFromQuickSaveFlow(String name,
 			String description, String objectName, String criteriaName,
 			String conditionTwoValue, String actionValue) throws Exception {
@@ -1173,8 +1170,8 @@ public class CreateFlowsPage extends AbstractPage {
 
 		// First Condition
 		criteriaOneField.click();
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Notes To Save");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Notes To Save");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[text()='Notes To Save']")).click();
 		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
@@ -1194,8 +1191,8 @@ public class CreateFlowsPage extends AbstractPage {
 
 		// Second condition
 		criteriaTwoField.click();
-		waitForElementVisible(contactContainerField, PAUSE_LENGTH.AVG);
-		contactContainerField.sendKeys("Notes To Save");
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Notes To Save");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[text()='Notes To Save']")).click();
 		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
@@ -1230,7 +1227,8 @@ public class CreateFlowsPage extends AbstractPage {
 				By.xpath("//mark[text()='tobase__to_process_importQuickSaveNote']"))
 				.click();
 		Thread.sleep(2000);
-		Select oneTypeSetApexvariables = new Select(oneTypeSetApexVariablesSelect);
+		Select oneTypeSetApexvariables = new Select(
+				oneTypeSetApexVariablesSelect);
 		oneTypeSetApexvariables.selectByVisibleText("Reference");
 		waitForElementVisible(oneValueField, PAUSE_LENGTH.AVG);
 		oneValueField.click();
@@ -1252,18 +1250,18 @@ public class CreateFlowsPage extends AbstractPage {
 				By.xpath("//span[text()='2 Field']/..//a[contains(text(),'Note Field')]"))
 				.click();
 		Thread.sleep(2000);
-		Select twoTypeSetApexvariables = new Select(twoTypeSetApexVariablesSelect);
+		Select twoTypeSetApexvariables = new Select(
+				twoTypeSetApexVariablesSelect);
 		twoTypeSetApexvariables.selectByVisibleText("Reference");
 		waitForElementVisible(twoValueField, PAUSE_LENGTH.AVG);
 		twoValueField.click();
 		waitForElementVisible(selectAFieldField, PAUSE_LENGTH.AVG);
 		selectAFieldField.sendKeys("Notes To Save");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//span[text()='Notes To Save']"))
-				.click();
+		driver.findElement(By.xpath("//span[text()='Notes To Save']")).click();
 		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
 		chooseButton.click();
-		
+
 		Thread.sleep(2000);
 		saveActionButton.click();
 
@@ -1273,5 +1271,789 @@ public class CreateFlowsPage extends AbstractPage {
 		waitForElementVisible(confirmActivateButton, PAUSE_LENGTH.AVG);
 		confirmActivateButton.click();
 	}
-	
+
+	public void createTaskCreationHiringManagerFlow(String name,
+			String description, String objectName, String criteriaName,
+			String conditionTwoValue, String actionValue) throws Exception {
+
+		newButton.click();
+		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
+		processName.clear();
+		processName.sendKeys(name);
+		processDescription.clear();
+		processDescription.sendKeys(description);
+		Thread.sleep(2000);
+		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
+		saveButton.click();
+		Thread.sleep(2000);
+		waitForElementVisible(addObject, PAUSE_LENGTH.AVG);
+		addObject.click();
+		waitForElementVisible(findObject, PAUSE_LENGTH.AVG);
+		findObject.clear();
+		findObject.sendKeys(objectName);
+		// Thread.sleep(4000);
+		waitForElementVisible(By.xpath("//mark[text()='" + objectName + "']"),
+				PAUSE_LENGTH.AVG);
+		driver.findElement(By.xpath("//mark[text()='" + objectName + "']"))
+				.click();
+		Thread.sleep(2000);
+		createdEditedOption.click();
+		Thread.sleep(2000);
+		saveButton.click();
+		Thread.sleep(2000);
+
+		waitForElementVisible(addCriteria, PAUSE_LENGTH.AVG);
+		addCriteria.click();
+		waitForElementVisible(nameCriteriaField, PAUSE_LENGTH.AVG);
+		nameCriteriaField.sendKeys(criteriaName);
+		conditionsCriteriaType.click();
+
+		// Condition
+		criteriaOneField.click();
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("tobase__Hiring_Manager__c");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//span[text()='tobase__Hiring_Manager__c']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+
+		Select operatorOne = new Select(operatorOneSelect);
+		operatorOne.selectByVisibleText("Does not equal");
+		Thread.sleep(2000);
+		Select typeOne = new Select(oneTypeDefineCriteriaConditionSelect);
+		typeOne.selectByVisibleText("Global Constant");
+		Thread.sleep(2000);
+		Select valueOne = new Select(valueOneSelect);
+		valueOne.selectByVisibleText("$GlobalConstant.Null");
+		Thread.sleep(2000);
+
+		advancedCriteriaLink.click();
+		waitForElementVisible(yesAdvancedCriteriaRadio, PAUSE_LENGTH.AVG);
+		yesAdvancedCriteriaRadio.click();
+		Thread.sleep(2000);
+		saveCriteriaButton.click();
+
+		// Time to close exception
+		Thread.sleep(8000);
+
+		waitForElementVisible(addActionImmideateOneButton, PAUSE_LENGTH.AVG);
+		addActionImmideateOneButton.click();
+		waitForElementVisible(actionTypeSelect, PAUSE_LENGTH.AVG);
+		Select actionType = new Select(actionTypeSelect);
+		actionType.selectByVisibleText("Quick Actions");
+
+		waitForElementVisible(actionNameField, PAUSE_LENGTH.AVG);
+		actionNameField.sendKeys("Create Task for Hiring Manager");
+
+		waitForElementVisible(filterSearchBySelect, PAUSE_LENGTH.AVG);
+		Select filterSearchBy = new Select(filterSearchBySelect);
+		filterSearchBy.selectByVisibleText("Global actions");
+
+		waitForElementVisible(typeFilterSearchBySelect, PAUSE_LENGTH.AVG);
+		Select typeFilterSearchBy = new Select(typeFilterSearchBySelect);
+		typeFilterSearchBy.selectByVisibleText("Create a Record");
+
+		waitForElementVisible(actionFilterSearchByField, PAUSE_LENGTH.AVG);
+		actionFilterSearchByField.sendKeys("NewTask");
+		waitForElementVisible(By.xpath("//a[text()='NewTask']"),
+				PAUSE_LENGTH.AVG);
+		driver.findElement(By.xpath("//a[text()='NewTask']")).click();
+
+		Thread.sleep(2000);
+		Select oneTypeSetQuickActions = new Select(oneTypeSetQuickActionsSelect);
+		oneTypeSetQuickActions.selectByVisibleText("Reference");
+
+		waitForElementVisible(oneValueSetQuickActionsField, PAUSE_LENGTH.AVG);
+		oneValueSetQuickActionsField.click();
+		waitForElementVisible(selectAFieldField, PAUSE_LENGTH.AVG);
+		selectAFieldField.sendKeys("tobase__Hiring_Manager__c");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//div[@class='visible uiAutocompletePanel--default uiAutocompletePanel--lookup uiAutocompletePanel']//span[contains(text(),'tobase__Hiring_Manager__c')]"))
+				.click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+		Thread.sleep(2000);
+
+		// Second Action
+
+		addRowQuickActionParameterListButton.click();
+		Thread.sleep(2000);
+
+		twoFieldSetQuickActionsField.sendKeys("Related Record ID");
+		waitForElementVisible(By.xpath("//a[text()='Related Record ID']"),
+				PAUSE_LENGTH.AVG);
+		driver.findElement(By.xpath("//a[text()='Related Record ID']")).click();
+		Thread.sleep(2000);
+		Select twoTypeSetQuickActions = new Select(twoTypeSetQuickActionsSelect);
+		twoTypeSetQuickActions.selectByVisibleText("Reference");
+
+		waitForElementVisible(twoValueSetQuickActionsField, PAUSE_LENGTH.AVG);
+		twoValueSetQuickActionsField.click();
+		waitForElementVisible(selectAFieldField, PAUSE_LENGTH.AVG);
+
+		selectAFieldField.sendKeys("Record ID");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[contains(text(),'Record ID')]"))
+				.click();
+
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+		Thread.sleep(2000);
+
+		// Third Action
+
+		addRowQuickActionParameterListButton.click();
+		Thread.sleep(2000);
+
+		threeFieldSetQuickActionsField.sendKeys("Status");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//div[@class='lookup__menu uiAbstractList uiAutocompleteList uiInput uiAutocomplete uiInput--default uiInput--lookup']//a[text()='Status']"))
+				.click();
+		Thread.sleep(2000);
+		Select threeTypeSetQuickActions = new Select(
+				threeTypeSetQuickActionsSelect);
+		threeTypeSetQuickActions.selectByVisibleText("Picklist");
+
+		Thread.sleep(2000);
+		Select threeValueSetQuickActions = new Select(
+				threeValueSetQuickActionsSelect);
+		threeValueSetQuickActions.selectByVisibleText("Not Started");
+
+		// Fourth Action
+		addRowQuickActionParameterListButton.click();
+		Thread.sleep(2000);
+
+		fourFieldSetQuickActionsField.sendKeys("Subject");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//div[@class='lookup__menu uiAbstractList uiAutocompleteList uiInput uiAutocomplete uiInput--default uiInput--lookup']//a[text()='Subject']"))
+				.click();
+		Thread.sleep(2000);
+		Select fourTypeSetQuickActions = new Select(
+				fourTypeSetQuickActionsSelect);
+		fourTypeSetQuickActions.selectByVisibleText("Formula");
+
+		waitForElementVisible(fourValueSetQuickActionsField, PAUSE_LENGTH.AVG);
+		fourValueSetQuickActionsField.click();
+
+		waitForElementVisible(formulaField, PAUSE_LENGTH.AVG);
+		formulaField
+				.sendKeys("[tobase__Recruiting_Project__c].Name + ' project has been shared with you.'");
+		useThisFormulaButton.click();
+
+		Thread.sleep(2000);
+		saveActionButton.click();
+
+		Thread.sleep(6000);
+		activateButton.click();
+
+		waitForElementVisible(confirmActivateButton, PAUSE_LENGTH.AVG);
+		confirmActivateButton.click();
+	}
+
+	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonConditionListRow'][1]//option[@value='Boolean']/parent::select")
+	private WebElement oneTypeDefineCriteriaBooleanSelect;
+
+	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonConditionListRow'][3]//span[text()='Find a field...']")
+	private WebElement criteriaThreeField;
+
+	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonConditionListRow'][3]//option[@value='String']/parent::select")
+	private WebElement typeThreeSelect;
+
+	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonConditionListRow'][3]//option[@value='EqualTo']/parent::select")
+	private WebElement operatorThreeSelect;
+
+	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonConditionListRow'][3]//option[text()='Select One']/parent::select")
+	private WebElement valueThreeSelect;
+
+	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonParameterListRow'][1]//input")
+	private WebElement oneValueStringField;
+
+	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonParameterListRow'][2]//input")
+	private WebElement twoValueStringField;
+
+	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonParameterListRow'][3]//label[@class='uiLabel processuicommonInput processuicommonInputText']//input")
+	private WebElement threeValueStringField;
+
+	@FindBy(xpath = "//tr[@class='processuicommonItemListRow processuicommonConditionListRow'][1]//option[@value='true']/parent::select")
+	private WebElement valueOneBooleanSelect;
+
+	public void createImportSkillsToContactFlow(String name,
+			String description, String objectName, String criteriaName)
+			throws Exception {
+
+		newButton.click();
+		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
+		processName.clear();
+		processName.sendKeys(name);
+		processDescription.clear();
+		processDescription.sendKeys(description);
+		Thread.sleep(2000);
+		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
+		saveButton.click();
+		Thread.sleep(2000);
+		waitForElementVisible(addObject, PAUSE_LENGTH.AVG);
+		addObject.click();
+		waitForElementVisible(findObject, PAUSE_LENGTH.AVG);
+		findObject.clear();
+		findObject.sendKeys(objectName);
+		// Thread.sleep(4000);
+		waitForElementVisible(By.xpath("//mark[text()='" + objectName + "']"),
+				PAUSE_LENGTH.AVG);
+		driver.findElement(By.xpath("//mark[text()='" + objectName + "']"))
+				.click();
+		Thread.sleep(2000);
+		createdEditedOption.click();
+		Thread.sleep(2000);
+		saveButton.click();
+		Thread.sleep(2000);
+
+		waitForElementVisible(addCriteria, PAUSE_LENGTH.AVG);
+		addCriteria.click();
+		waitForElementVisible(nameCriteriaField, PAUSE_LENGTH.AVG);
+		nameCriteriaField.sendKeys(criteriaName);
+		conditionsCriteriaType.click();
+		Thread.sleep(2000);
+
+		// First Condition
+		criteriaOneField.click();
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Skills");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Skills']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+
+		Select operatorOne = new Select(operatorOneSelect);
+		operatorOne.selectByVisibleText("Is changed");
+		Thread.sleep(2000);
+		Select typeOne = new Select(oneTypeDefineCriteriaBooleanSelect);
+		typeOne.selectByVisibleText("Boolean");
+		Thread.sleep(2000);
+		Select valueOne = new Select(valueOneBooleanSelect);
+		valueOne.selectByVisibleText("True");
+		Thread.sleep(2000);
+
+		// Second condition
+		addConditionRowButton.click();
+		Thread.sleep(2000);
+		criteriaTwoField.click();
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Skills");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Skills']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+		Select operatorTwo = new Select(operatorTwoSelect);
+		operatorTwo.selectByVisibleText("Does not equal");
+		Thread.sleep(2000);
+		Select typeTwo = new Select(typeTwoSelect);
+		typeTwo.selectByVisibleText("Global Constant");
+		Thread.sleep(2000);
+		Select valueTwo = new Select(valueTwoSelect);
+		valueTwo.selectByVisibleText("$GlobalConstant.Null");
+
+		addConditionRowButton.click();
+		Thread.sleep(2000);
+		criteriaThreeField.click();
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Skills");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Skills']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+		Select operatorThree = new Select(operatorThreeSelect);
+		operatorThree.selectByVisibleText("Does not equal");
+		Thread.sleep(2000);
+		Select typeThree = new Select(typeThreeSelect);
+		typeThree.selectByVisibleText("Global Constant");
+		Thread.sleep(2000);
+		Select valueThree = new Select(valueThreeSelect);
+		valueThree.selectByVisibleText("$GlobalConstant.EmptyString");
+
+		Thread.sleep(2000);
+		allConditionsType.click();
+		Thread.sleep(2000);
+		saveCriteriaButton.click();
+
+		waitForElementVisible(saveCriteriaButton, PAUSE_LENGTH.AVG);
+		saveCriteriaButton.click();
+
+		// Time to close exception
+		Thread.sleep(8000);
+
+		waitForElementVisible(addActionImmideateOneButton, PAUSE_LENGTH.AVG);
+		addActionImmideateOneButton.click();
+		waitForElementVisible(actionTypeSelect, PAUSE_LENGTH.AVG);
+		Select actionType = new Select(actionTypeSelect);
+		actionType.selectByVisibleText("Apex");
+		waitForElementVisible(actionNameField, PAUSE_LENGTH.AVG);
+		actionNameField.sendKeys("Copy Skills to Contact");
+		apexClassField.sendKeys("Import Talent Data to Contact");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//mark[text()='Import Talent Data to Contact']"))
+				.click();
+		Thread.sleep(2000);
+		Select oneTypeSetApexvariables = new Select(
+				oneTypeSetApexVariablesSelect);
+		oneTypeSetApexvariables.selectByVisibleText("String");
+		waitForElementVisible(oneValueStringField, PAUSE_LENGTH.AVG);
+		oneValueStringField.sendKeys("Skills__c");
+
+		// Second row
+		Thread.sleep(2000);
+		Select twoTypeSetApexvariables = new Select(
+				twoTypeSetApexVariablesSelect);
+		twoTypeSetApexvariables.selectByVisibleText("Reference");
+		waitForElementVisible(twoValueField, PAUSE_LENGTH.AVG);
+		twoValueField.click();
+		waitForElementVisible(selectAFieldField, PAUSE_LENGTH.AVG);
+		selectAFieldField.sendKeys("Record ID");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Record ID']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+
+		// Third row
+		Thread.sleep(2000);
+		addParameterRowButton.click();
+		waitForElementVisible(threeField, PAUSE_LENGTH.AVG);
+		threeField.sendKeys("Source Field API Name");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//span[text()='3 Field']/..//a[contains(text(),'Source Field API Name')]"))
+				.click();
+		Thread.sleep(2000);
+		Select threeTypeSetApexvariables = new Select(
+				threeTypeSetApexVariablesSelect);
+		threeTypeSetApexvariables.selectByVisibleText("String");
+		waitForElementVisible(threeValueStringField, PAUSE_LENGTH.AVG);
+		threeValueStringField.sendKeys("tobase__Skills__c");
+		Thread.sleep(2000);
+		saveActionButton.click();
+
+		Thread.sleep(6000);
+		activateButton.click();
+
+		waitForElementVisible(confirmActivateButton, PAUSE_LENGTH.AVG);
+		confirmActivateButton.click();
+	}
+
+	public void createImportTargetedRolesToContactFlow(String name,
+			String description, String objectName, String criteriaName)
+			throws Exception {
+
+		newButton.click();
+		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
+		processName.clear();
+		processName.sendKeys(name);
+		processDescription.clear();
+		processDescription.sendKeys(description);
+		Thread.sleep(2000);
+		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
+		saveButton.click();
+		Thread.sleep(2000);
+		waitForElementVisible(addObject, PAUSE_LENGTH.AVG);
+		addObject.click();
+		waitForElementVisible(findObject, PAUSE_LENGTH.AVG);
+		findObject.clear();
+		findObject.sendKeys(objectName);
+		// Thread.sleep(4000);
+		waitForElementVisible(By.xpath("//mark[text()='" + objectName + "']"),
+				PAUSE_LENGTH.AVG);
+		driver.findElement(By.xpath("//mark[text()='" + objectName + "']"))
+				.click();
+		Thread.sleep(2000);
+		createdEditedOption.click();
+		Thread.sleep(2000);
+		saveButton.click();
+		Thread.sleep(2000);
+
+		waitForElementVisible(addCriteria, PAUSE_LENGTH.AVG);
+		addCriteria.click();
+		waitForElementVisible(nameCriteriaField, PAUSE_LENGTH.AVG);
+		nameCriteriaField.sendKeys(criteriaName);
+		conditionsCriteriaType.click();
+		Thread.sleep(2000);
+
+		// First Condition
+		criteriaOneField.click();
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Targeted Roles");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Targeted Roles']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+
+		Select operatorOne = new Select(operatorOneSelect);
+		operatorOne.selectByVisibleText("Is changed");
+		Thread.sleep(2000);
+		Select typeOne = new Select(oneTypeDefineCriteriaBooleanSelect);
+		typeOne.selectByVisibleText("Boolean");
+		Thread.sleep(2000);
+		Select valueOne = new Select(valueOneBooleanSelect);
+		valueOne.selectByVisibleText("True");
+		Thread.sleep(2000);
+
+		// Second condition
+		addConditionRowButton.click();
+		Thread.sleep(2000);
+		criteriaTwoField.click();
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Targeted Roles");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Targeted Roles']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+		Select operatorTwo = new Select(operatorTwoSelect);
+		operatorTwo.selectByVisibleText("Does not equal");
+		Thread.sleep(2000);
+		Select typeTwo = new Select(typeTwoSelect);
+		typeTwo.selectByVisibleText("Global Constant");
+		Thread.sleep(2000);
+		Select valueTwo = new Select(valueTwoSelect);
+		valueTwo.selectByVisibleText("$GlobalConstant.Null");
+
+		addConditionRowButton.click();
+		Thread.sleep(2000);
+		criteriaThreeField.click();
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("Targeted Roles");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Targeted Roles']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+		Select operatorThree = new Select(operatorThreeSelect);
+		operatorThree.selectByVisibleText("Does not equal");
+		Thread.sleep(2000);
+		Select typeThree = new Select(typeThreeSelect);
+		typeThree.selectByVisibleText("Global Constant");
+		Thread.sleep(2000);
+		Select valueThree = new Select(valueThreeSelect);
+		valueThree.selectByVisibleText("$GlobalConstant.EmptyString");
+
+		Thread.sleep(2000);
+		allConditionsType.click();
+		Thread.sleep(2000);
+		saveCriteriaButton.click();
+
+		waitForElementVisible(saveCriteriaButton, PAUSE_LENGTH.AVG);
+		saveCriteriaButton.click();
+
+		// Time to close exception
+		Thread.sleep(8000);
+
+		waitForElementVisible(addActionImmideateOneButton, PAUSE_LENGTH.AVG);
+		addActionImmideateOneButton.click();
+		waitForElementVisible(actionTypeSelect, PAUSE_LENGTH.AVG);
+		Select actionType = new Select(actionTypeSelect);
+		actionType.selectByVisibleText("Apex");
+		waitForElementVisible(actionNameField, PAUSE_LENGTH.AVG);
+		actionNameField.sendKeys("Import Targeted Role to Contact");
+		apexClassField.sendKeys("Import Talent Data to Contact");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//mark[text()='Import Talent Data to Contact']"))
+				.click();
+		Thread.sleep(2000);
+		Select oneTypeSetApexvariables = new Select(
+				oneTypeSetApexVariablesSelect);
+		oneTypeSetApexvariables.selectByVisibleText("String");
+		waitForElementVisible(oneValueStringField, PAUSE_LENGTH.AVG);
+		oneValueStringField.sendKeys("Targeted_Roles__c");
+
+		// Second row
+		Thread.sleep(2000);
+		Select twoTypeSetApexvariables = new Select(
+				twoTypeSetApexVariablesSelect);
+		twoTypeSetApexvariables.selectByVisibleText("Reference");
+		waitForElementVisible(twoValueField, PAUSE_LENGTH.AVG);
+		twoValueField.click();
+		waitForElementVisible(selectAFieldField, PAUSE_LENGTH.AVG);
+		selectAFieldField.sendKeys("Record ID");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Record ID']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+
+		// Third row
+		Thread.sleep(2000);
+		addParameterRowButton.click();
+		waitForElementVisible(threeField, PAUSE_LENGTH.AVG);
+		threeField.sendKeys("Source Field API Name");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//span[text()='3 Field']/..//a[contains(text(),'Source Field API Name')]"))
+				.click();
+		Thread.sleep(2000);
+		Select threeTypeSetApexvariables = new Select(
+				threeTypeSetApexVariablesSelect);
+		threeTypeSetApexvariables.selectByVisibleText("String");
+		waitForElementVisible(threeValueStringField, PAUSE_LENGTH.AVG);
+		threeValueStringField.sendKeys("tobase__Targeted_Roles__c");
+		Thread.sleep(2000);
+		saveActionButton.click();
+
+		Thread.sleep(6000);
+		activateButton.click();
+
+		waitForElementVisible(confirmActivateButton, PAUSE_LENGTH.AVG);
+		confirmActivateButton.click();
+	}
+
+	public void createImportEducationHistoryToContactFlow(String name,
+			String description, String objectName, String criteriaName)
+			throws Exception {
+
+		newButton.click();
+		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
+		processName.clear();
+		processName.sendKeys(name);
+		processDescription.clear();
+		processDescription.sendKeys(description);
+		Thread.sleep(2000);
+		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
+		saveButton.click();
+		Thread.sleep(2000);
+		waitForElementVisible(addObject, PAUSE_LENGTH.AVG);
+		addObject.click();
+		waitForElementVisible(findObject, PAUSE_LENGTH.AVG);
+		findObject.clear();
+		findObject.sendKeys(objectName);
+		// Thread.sleep(4000);
+		waitForElementVisible(By.xpath("//mark[text()='" + objectName + "']"),
+				PAUSE_LENGTH.AVG);
+		driver.findElement(By.xpath("//mark[text()='" + objectName + "']"))
+				.click();
+		Thread.sleep(2000);
+		createdEditedOption.click();
+		Thread.sleep(2000);
+		saveButton.click();
+		Thread.sleep(2000);
+
+		waitForElementVisible(addCriteria, PAUSE_LENGTH.AVG);
+		addCriteria.click();
+		waitForElementVisible(nameCriteriaField, PAUSE_LENGTH.AVG);
+		nameCriteriaField.sendKeys(criteriaName);
+		conditionsCriteriaType.click();
+		Thread.sleep(2000);
+
+		// Condition
+		criteriaOneField.click();
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("tobase__Talent_Profile__c");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//span[text()='tobase__Talent_Profile__c']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+
+		Select operatorOne = new Select(operatorOneSelect);
+		operatorOne.selectByVisibleText("Does not equal");
+		Thread.sleep(2000);
+		Select typeOne = new Select(oneTypeDefineCriteriaConditionSelect);
+		typeOne.selectByVisibleText("Global Constant");
+		Thread.sleep(2000);
+		Select valueOne = new Select(valueOneSelect);
+		valueOne.selectByVisibleText("$GlobalConstant.Null");
+		Thread.sleep(2000);
+
+		allConditionsType.click();
+		Thread.sleep(2000);
+		saveCriteriaButton.click();
+
+		waitForElementVisible(saveCriteriaButton, PAUSE_LENGTH.AVG);
+		saveCriteriaButton.click();
+
+		// Time to close exception
+		Thread.sleep(8000);
+
+		waitForElementVisible(addActionImmideateOneButton, PAUSE_LENGTH.AVG);
+		addActionImmideateOneButton.click();
+		waitForElementVisible(actionTypeSelect, PAUSE_LENGTH.AVG);
+		Select actionType = new Select(actionTypeSelect);
+		actionType.selectByVisibleText("Apex");
+		waitForElementVisible(actionNameField, PAUSE_LENGTH.AVG);
+		actionNameField.sendKeys("Copy Education History to Contact");
+		apexClassField.sendKeys("Import Talent Data to Contact");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//mark[text()='Import Talent Data to Contact']"))
+				.click();
+		Thread.sleep(2000);
+		Select oneTypeSetApexvariables = new Select(
+				oneTypeSetApexVariablesSelect);
+		oneTypeSetApexvariables.selectByVisibleText("String");
+		waitForElementVisible(oneValueStringField, PAUSE_LENGTH.AVG);
+		oneValueStringField.sendKeys("Education_History__c");
+
+		// Second row
+		Thread.sleep(2000);
+		Select twoTypeSetApexvariables = new Select(
+				twoTypeSetApexVariablesSelect);
+		twoTypeSetApexvariables.selectByVisibleText("Reference");
+		waitForElementVisible(twoValueField, PAUSE_LENGTH.AVG);
+		twoValueField.click();
+		waitForElementVisible(selectAFieldField, PAUSE_LENGTH.AVG);
+		selectAFieldField.sendKeys("tobase__Talent_Profile__c");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//span[text()='tobase__Talent_Profile__c']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+
+		// Third row
+		Thread.sleep(2000);
+		addParameterRowButton.click();
+		waitForElementVisible(threeField, PAUSE_LENGTH.AVG);
+		threeField.sendKeys("Source Child Record API Name");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//span[text()='3 Field']/..//a[contains(text(),'Source Child Record API Name')]"))
+				.click();
+		Thread.sleep(2000);
+		Select threeTypeSetApexvariables = new Select(
+				threeTypeSetApexVariablesSelect);
+		threeTypeSetApexvariables.selectByVisibleText("String");
+		waitForElementVisible(threeValueStringField, PAUSE_LENGTH.AVG);
+		threeValueStringField.sendKeys("tobase__Education_History__c");
+		Thread.sleep(2000);
+		saveActionButton.click();
+
+		Thread.sleep(6000);
+		activateButton.click();
+
+		waitForElementVisible(confirmActivateButton, PAUSE_LENGTH.AVG);
+		confirmActivateButton.click();
+	}
+
+	public void createEmploymentChangedFlow(String name, String description,
+			String objectName, String criteriaName) throws Exception {
+
+		newButton.click();
+		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
+		processName.clear();
+		processName.sendKeys(name);
+		processDescription.clear();
+		processDescription.sendKeys(description);
+		Thread.sleep(2000);
+		waitForElementVisible(processName, PAUSE_LENGTH.AVG);
+		saveButton.click();
+		Thread.sleep(2000);
+		waitForElementVisible(addObject, PAUSE_LENGTH.AVG);
+		addObject.click();
+		waitForElementVisible(findObject, PAUSE_LENGTH.AVG);
+		findObject.clear();
+		findObject.sendKeys(objectName);
+		// Thread.sleep(4000);
+		waitForElementVisible(By.xpath("//mark[text()='" + objectName + "']"),
+				PAUSE_LENGTH.AVG);
+		driver.findElement(By.xpath("//mark[text()='" + objectName + "']"))
+				.click();
+		Thread.sleep(2000);
+		createdEditedOption.click();
+		Thread.sleep(2000);
+		saveButton.click();
+		Thread.sleep(2000);
+
+		waitForElementVisible(addCriteria, PAUSE_LENGTH.AVG);
+		addCriteria.click();
+		waitForElementVisible(nameCriteriaField, PAUSE_LENGTH.AVG);
+		nameCriteriaField.sendKeys(criteriaName);
+		conditionsCriteriaType.click();
+		Thread.sleep(2000);
+
+		// Condition
+		criteriaOneField.click();
+		waitForElementVisible(inputContainerField, PAUSE_LENGTH.AVG);
+		inputContainerField.sendKeys("tobase__Talent_Profile__c");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//span[text()='tobase__Talent_Profile__c']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+
+		Select operatorOne = new Select(operatorOneSelect);
+		operatorOne.selectByVisibleText("Does not equal");
+		Thread.sleep(2000);
+		Select typeOne = new Select(oneTypeDefineCriteriaConditionSelect);
+		typeOne.selectByVisibleText("Global Constant");
+		Thread.sleep(2000);
+		Select valueOne = new Select(valueOneSelect);
+		valueOne.selectByVisibleText("$GlobalConstant.Null");
+		Thread.sleep(2000);
+
+		allConditionsType.click();
+		Thread.sleep(2000);
+		saveCriteriaButton.click();
+
+		waitForElementVisible(saveCriteriaButton, PAUSE_LENGTH.AVG);
+		saveCriteriaButton.click();
+
+		// Time to close exception
+		Thread.sleep(8000);
+
+		waitForElementVisible(addActionImmideateOneButton, PAUSE_LENGTH.AVG);
+		addActionImmideateOneButton.click();
+		waitForElementVisible(actionTypeSelect, PAUSE_LENGTH.AVG);
+		Select actionType = new Select(actionTypeSelect);
+		actionType.selectByVisibleText("Apex");
+		waitForElementVisible(actionNameField, PAUSE_LENGTH.AVG);
+		actionNameField.sendKeys("Employment Changed");
+		apexClassField.sendKeys("Import Talent Data to Contact");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//mark[text()='Import Talent Data to Contact']"))
+				.click();
+		Thread.sleep(2000);
+		Select oneTypeSetApexvariables = new Select(
+				oneTypeSetApexVariablesSelect);
+		oneTypeSetApexvariables.selectByVisibleText("String");
+		waitForElementVisible(oneValueStringField, PAUSE_LENGTH.AVG);
+		oneValueStringField.sendKeys("Employment_History__c");
+
+		// Second row
+		Thread.sleep(2000);
+		Select twoTypeSetApexvariables = new Select(
+				twoTypeSetApexVariablesSelect);
+		twoTypeSetApexvariables.selectByVisibleText("Reference");
+		waitForElementVisible(twoValueField, PAUSE_LENGTH.AVG);
+		twoValueField.click();
+		waitForElementVisible(selectAFieldField, PAUSE_LENGTH.AVG);
+		selectAFieldField.sendKeys("tobase__Talent_Profile__c");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//span[text()='tobase__Talent_Profile__c']")).click();
+		waitForElementVisible(chooseButton, PAUSE_LENGTH.AVG);
+		chooseButton.click();
+
+		// Third row
+		Thread.sleep(2000);
+		addParameterRowButton.click();
+		waitForElementVisible(threeField, PAUSE_LENGTH.AVG);
+		threeField.sendKeys("Source Child Record API Name");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//span[text()='3 Field']/..//a[contains(text(),'Source Child Record API Name')]"))
+				.click();
+		Thread.sleep(2000);
+		Select threeTypeSetApexvariables = new Select(
+				threeTypeSetApexVariablesSelect);
+		threeTypeSetApexvariables.selectByVisibleText("String");
+		waitForElementVisible(threeValueStringField, PAUSE_LENGTH.AVG);
+		threeValueStringField.sendKeys("tobase__Employment_History__c");
+		Thread.sleep(2000);
+		saveActionButton.click();
+
+		Thread.sleep(6000);
+		activateButton.click();
+
+		waitForElementVisible(confirmActivateButton, PAUSE_LENGTH.AVG);
+		confirmActivateButton.click();
+	}
+
 }

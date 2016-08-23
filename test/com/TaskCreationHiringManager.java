@@ -9,7 +9,7 @@ import com.pages.LoginPage;
 import com.pages.SetupPage;
 import com.pages.CreateFlowsPage;
 
-public class GenerateTalentProspectDataWorkflow extends BaseTestCase {
+public class TaskCreationHiringManager extends BaseTestCase {
 
 	@Override
 	public void initPages() {
@@ -25,14 +25,16 @@ public class GenerateTalentProspectDataWorkflow extends BaseTestCase {
 	}
 
 	@Test(priority = 0)
-	public void generateTalentProspectDataWorkflow() throws Throwable {
+	public void taskCreationHiringManager() throws Throwable {
 		try {
 			loginPage.login();
 			setupPage.findSetupElement("Process Builder");
-			createFlowPage.createGenerateTalentProspectDataFlow(
-					"Auto Generate Talent Prospect Data Workflow",
-					"Generate Talent Prospect Data Workflow", "Contact",
-					"Contact Created");
+			createFlowPage
+					.createTaskCreationHiringManagerFlow(
+							"Auto Task on Hiring Manager for a Recruiting Project",
+							"Talent Pool Manager Processes 8",
+							"Recruiting Project", "Hiring Manager Added", "Yes",
+							"Interested");
 			Thread.sleep(5000);
 		} catch (Throwable e) {
 			log.error(e.getMessage());

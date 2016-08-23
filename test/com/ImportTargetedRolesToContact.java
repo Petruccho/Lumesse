@@ -9,7 +9,7 @@ import com.pages.LoginPage;
 import com.pages.SetupPage;
 import com.pages.CreateFlowsPage;
 
-public class GenerateTalentProspectDataWorkflow extends BaseTestCase {
+public class ImportTargetedRolesToContact extends BaseTestCase {
 
 	@Override
 	public void initPages() {
@@ -25,14 +25,14 @@ public class GenerateTalentProspectDataWorkflow extends BaseTestCase {
 	}
 
 	@Test(priority = 0)
-	public void generateTalentProspectDataWorkflow() throws Throwable {
+	public void importTargetedRolesToContact() throws Throwable {
 		try {
 			loginPage.login();
 			setupPage.findSetupElement("Process Builder");
-			createFlowPage.createGenerateTalentProspectDataFlow(
-					"Auto Generate Talent Prospect Data Workflow",
-					"Generate Talent Prospect Data Workflow", "Contact",
-					"Contact Created");
+			createFlowPage.createImportTargetedRolesToContactFlow(
+					"Auto Import Targeted Roles to Contact",
+					"Import Targeted Roles to Contact", "Talent Profile",
+					"Targeted Roles Changed");
 			Thread.sleep(5000);
 		} catch (Throwable e) {
 			log.error(e.getMessage());
