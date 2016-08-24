@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="113672" started-at="2016-08-23T13:32:13Z" finished-at="2016-08-23T13:34:07Z">
+  <suite name="Default suite" duration-ms="138778" started-at="2016-08-24T13:58:54Z" finished-at="2016-08-24T14:01:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="113672" started-at="2016-08-23T13:32:13Z" finished-at="2016-08-23T13:34:07Z">
-      <class name="com.EmploymentChanged">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.EmploymentChanged@6537cf78]" name="setup" is-config="true" duration-ms="3596" started-at="2016-08-23T16:32:13Z" finished-at="2016-08-23T16:32:17Z">
+    <test name="Default test" duration-ms="138778" started-at="2016-08-24T13:58:54Z" finished-at="2016-08-24T14:01:13Z">
+      <class name="com.CopyingApplicationDataToTalentProfile">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.CopyingApplicationDataToTalentProfile@6537cf78]" name="setup" is-config="true" duration-ms="3506" started-at="2016-08-24T16:58:54Z" finished-at="2016-08-24T16:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="employmentChanged()[pri:0, instance:com.EmploymentChanged@6537cf78]" name="employmentChanged" duration-ms="109140" started-at="2016-08-23T16:32:17Z" finished-at="2016-08-23T16:34:06Z">
+        <test-method status="PASS" signature="copyingApplicationDataToTalentProfile()[pri:0, instance:com.CopyingApplicationDataToTalentProfile@6537cf78]" name="copyingApplicationDataToTalentProfile" duration-ms="134347" started-at="2016-08-24T16:58:58Z" finished-at="2016-08-24T17:01:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- employmentChanged -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.EmploymentChanged@6537cf78]" name="tearDown" is-config="true" duration-ms="919" started-at="2016-08-23T16:34:06Z" finished-at="2016-08-23T16:34:07Z">
+        </test-method> <!-- copyingApplicationDataToTalentProfile -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.CopyingApplicationDataToTalentProfile@6537cf78]" name="tearDown" is-config="true" duration-ms="912" started-at="2016-08-24T17:01:12Z" finished-at="2016-08-24T17:01:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.EmploymentChanged -->
+      </class> <!-- com.CopyingApplicationDataToTalentProfile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
